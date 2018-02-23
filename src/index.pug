@@ -4,7 +4,66 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet")
         link(rel="stylesheet", href="styles.css")
         title RepairFlat39
     body
-        h1.hero test
+        header.site-header
+            nav.main-nav
+                .logo
+                    img(src="./img/logo.png" alt="logo")
+                    //- p.logo__text Ремонт
+                    //- p.logo__text.logo__text--small Квартир
+                    //- sup.logo__suptitle в калининграде
+                nav.main-menu  
+                    ul.main-menu__list
+                        li: a(href="#") О нас
+                        li: a(href="#") Услуги
+                        li: a(href="#") Наши работы
+                        li: a(href="#") Скидки
+                        li: a(href="#") Гарантии
+                        li: a(href="#") Отзывы
+                        li: a(href="#") Контакты
+
+                ul.info
+                    .info__icon
+                        img(src="./img/phone-icon.svg")
+                    li: a(href="tel: 335252") +7 (4012) 33 52 52
+                    li: a(href="tel: 335252") +7 (963) 738 52 52
+
+                .main-nav__buttons
+                    a.button.button--online-call(href="#") Заказать звонок
+                    a.button.button--calculator(href="#") Рассчитать стоимость ремонта
+            
+            section.hero
+                .hero__board
+                    h2.hero__motto Быстро.Дешево.Надежно
+                    h1.hero__title Ремонт<br>квартиры<br>под “Ключ” <b> от 2500<b><span>руб. за м<sub>2</sub></span>
+                    p.hero__copy Расчитайте стоимость ремонта в вашей квартире с нашим универсальным строительным калькулятором
+                    .hero__button
+                        a.button.button--hero(href="#") Рассчитать стоимость ремонта
+                .hero__form
+                    h3.hero__form-title Оставьте заявку и мы свяжемся с вами
+                    p.hero__form-description мы работаем с 900 до 2000, без перерывов, Пн-Сб.
+
+                    form.hero__form(action="#")
+                        .hero__form-group
+                            label.hero__form-label(for="name") Имя
+                            input.hero__form-input(type="text" name="name")
+                        .hero__form-group
+                            label.hero__form-label(for="contacts") Контактные детали
+                            input.hero__form-input(type="email" name="email")
+                            inpit.hero__form-input(type="phone" name="phone")
+                        .hero__form-group
+                            label(for="message") Сообщение
+                            textarea.hero__form-textarea(placeholder="Текст")
+                        .hero__button.hero__button--form
+                            a.button.button--arrive(href="#") Отправить
+                        p.hero__policy Заполняя форму вы соглашаетесь с условиями обработки персональных данных.
+
+            .site-header__mock
+                img(src="./img/mock.png")
+
+
+                        

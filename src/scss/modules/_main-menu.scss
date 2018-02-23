@@ -1,0 +1,43 @@
+.main-menu {
+
+    &__list {
+
+    // box model
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    // visual
+    background: none;
+    list-style: none;
+    
+    }
+
+    li {
+        // box model
+        padding: 10px 23px;
+        
+        // visual
+        transition: 0.3s ease-in-out;
+        border-radius: 35px;
+
+        &:hover {
+
+            // visual
+            background-color: $white;
+        }
+    }
+
+    a {
+        // box model
+
+        // typography
+        color: $black;
+        font-family: $textFont;
+        font-weight: 400;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+}

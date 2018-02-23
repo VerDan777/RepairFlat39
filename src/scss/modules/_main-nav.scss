@@ -1,0 +1,13 @@
+.main-nav {
+    // box model
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px;
+    padding-left: 30px;
+    padding-bottom: 0;
+
+    &__buttons {
+        // box model
+        margin-top: 20px;
+    }
+}

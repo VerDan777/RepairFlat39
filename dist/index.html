@@ -4,10 +4,63 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css"/>
     <title>RepairFlat39</title>
   </head>
   <body>
-    <h1 class="hero">test</h1>
+    <header class="site-header">
+      <nav class="main-nav">
+        <div class="logo"><img src="./img/logo.png" alt="logo"/></div>
+        <nav class="main-menu"> 
+          <ul class="main-menu__list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Наши работы</a></li>
+            <li><a href="#">Скидки</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="info">
+          <div class="info__icon"><img src="./img/phone-icon.svg"/></div>
+          <li><a href="tel: 335252">+7 (4012) 33 52 52</a></li>
+          <li><a href="tel: 335252">+7 (963) 738 52 52</a></li>
+        </ul>
+        <div class="main-nav__buttons"><a class="button button--online-call" href="#">Заказать звонок</a><a class="button button--calculator" href="#">Рассчитать стоимость ремонта</a></div>
+      </nav>
+      <section class="hero">
+        <div class="hero__board">
+          <h2 class="hero__motto">Быстро.Дешево.Надежно</h2>
+          <h1 class="hero__title">Ремонт<br>квартиры<br>под “Ключ” <b> от 2500<b><span>руб. за м<sub>2</sub></span></h1>
+          <p class="hero__copy">Расчитайте стоимость ремонта в вашей квартире с нашим универсальным строительным калькулятором</p>
+          <div class="hero__button"><a class="button button--hero" href="#">Рассчитать стоимость ремонта</a></div>
+        </div>
+        <div class="hero__form">
+          <h3 class="hero__form-title">Оставьте заявку и мы свяжемся с вами</h3>
+          <p class="hero__form-description">мы работаем с 900 до 2000, без перерывов, Пн-Сб.</p>
+          <form class="hero__form" action="#">
+            <div class="hero__form-group">
+              <label class="hero__form-label" for="name">Имя</label>
+              <input class="hero__form-input" type="text" name="name"/>
+            </div>
+            <div class="hero__form-group">
+              <label class="hero__form-label" for="contacts">Контактные детали</label>
+              <input class="hero__form-input" type="email" name="email"/>
+              <inpit class="hero__form-input" type="phone" name="phone"></inpit>
+            </div>
+            <div class="hero__form-group">
+              <label for="message">Сообщение</label>
+              <textarea class="hero__form-textarea" placeholder="Текст"></textarea>
+            </div>
+            <div class="hero__button hero__button--form"><a class="button button--arrive" href="#">Отправить</a></div>
+            <p class="hero__policy">Заполняя форму вы соглашаетесь с условиями обработки персональных данных.</p>
+          </form>
+        </div>
+      </section>
+      <div class="site-header__mock"><img src="./img/mock.png"/></div>
+    </header>
   </body>
 </html>
