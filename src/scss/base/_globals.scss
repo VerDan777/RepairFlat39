@@ -1,0 +1,36 @@
+html {
+    // box model
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    // box model
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    height: 100%;
+    width: 100%;
+
+    // typography
+    // font-family: $mainFont;
+    font-size: 16px;
+
+    // visual
+    overflow-x: hidden;
+}
+
+ul, p, h1, h2, h3, h4, h5 {
+    // box model
+    margin: 0;
+}
+
+* {
+    // box model
+    box-sizing: inherit;
+
+    // typography
+    box-sizing: inherit;
+}
+

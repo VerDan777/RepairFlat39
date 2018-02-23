@@ -1,0 +1,28 @@
+{
+  "name": "repair-flat39",
+  "version": "1.0.0",
+  "description": "web-site for company which repair flats",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VerDan777/RepairFlat39.git"
+  },
+  "author": "Daniil Vereschagin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VerDan777/RepairFlat39/issues"
+  },
+  "homepage": "https://github.com/VerDan777/RepairFlat39#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug2": "0.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^5.0.0",
+    "sass-module-importer": "^1.4.0"
+  }
+}
