@@ -4,10 +4,82 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css"/>
     <title>RepairFlat39</title>
   </head>
   <body>
-    <h1 class="hero">test</h1>
+    <header class="site-header">
+      <nav class="main-nav">
+        <div class="logo"><img src="./img/logo.png" alt="RepairFlat Logo"/></div>
+        <div class="main-menu">
+          <ul class="main-menu__list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">услуги</a></li>
+            <li><a href="#">Наши работы</a></li>
+            <li><a href="#">Скидки</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <div class="info__icon"><img src="./img/phone-icon.png"/></div>
+          <div class="info__contacts">
+            <li><a class="info__phone" href="tel:335252">+7 (4012) 33 52 52</a></li>
+            <li><a class="info__phone" href="tel:335252">+7 (963) 738 52 52</a></li>
+          </div>
+        </div>
+        <div class="main-nav__buttons"><a class="button button--online-record" href="#">Заказать звонок</a><a class="button button--calculator" href="#">Рассчитать стоимость ремонта</a></div>
+      </nav>
+      <section class="hero">
+        <div class="hero__board">
+          <header class="hero__header">
+            <p class="hero__motto">Быстро.Дешево.Надежно</p>
+            <h1 class="hero__title">Ремонт<br>Квартиры<br>под ключ<br><b>от 2500</b><span>руб. за м<sup>2</sup></span></h1>
+          </header>
+          <div class="hero__content">
+            <p class="hero__copy">Расчитайте стоимость ремонта в вашей квартире с<br>нашим универсальным строительным калькулятором </p>
+            <div class="hero__button"><a class="button button--calculator button--hero" href="#">Рассчитать стоимость ремонта</a></div>
+          </div>
+        </div>
+        <form class="hero__form" action="mail.php">
+          <header class="hero__form-header">
+            <h2 class="hero__form-title">Оставьте заявку<br> и мы свяжемся с вами</h2>
+            <p class="hero__form-description">мы работаем с 9<sup>00</sup> до 20<sup>00</sup>, без перерывов, <span>Пн-Сб</span></p>
+          </header>
+          <div class="hero__content">
+            <div class="hero__form-group">
+              <label for="name">Имя</label>
+              <input class="hero__form-input" type="text" name="name" placeholder="Ваше имя"/>
+            </div>
+            <div class="hero__form-group">
+              <label for="contacts">Контактные детали</label>
+              <input class="hero__form-input" type="email" name="email" placeholder="E-mail"/>
+              <input class="hero__form-input" type="phone" name="phone" placeholder="Телефон "/>
+            </div>
+            <div class="hero__form-group">
+              <label for="message">Сообщение</label>
+              <textarea class="hero__form-textarea" placeholder="Текст"></textarea>
+            </div>
+          </div>
+          <div class="hero__form-button">
+            <div class="hero__form-buttons"><a class="button button--send" href="#">Отправить</a></div>
+            <p class="hero__policy">Заполняя форму вы соглашаетесь<br>с условиями обработки<br>персональных данных</p>
+          </div>
+        </form>
+      </section>
+      <div class="site-header__mock"><img src="./img/mock.png" alt="RepairFlat39 mock"/></div>
+    </header>
+    <section class="services">
+      <div class="services__img">
+        <p class="label">Услуги</p>
+        <div class="services__content">
+          <h4 class="services__title">Мы занимемся ремонтом<br>жилых и промышленных<br>помещений любой<br>сложности</h4>
+          <p class="services__copy">Наш девиз - Быстро. Дешево.Надежно<br>Мы подходим к работе с проффесионализмом и<br>не допустим срывов и задержек сроков. </p>
+        </div><img src="./img/services_present.png" alt="RepairFlat39"/>
+      </div>
+    </section>
   </body>
 </html>
