@@ -1,0 +1,23 @@
+.site-header {
+    // positioning
+    position: relative;
+
+    // box model
+    min-height: 900px;
+
+    // visual
+    background-image: url("./img/background_header-lg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    &__mock {
+        // positioning
+        position: absolute;
+        bottom: 0;
+        @include centererX;
+        
+        // typography
+        font-size: 0;
+    }
+}

@@ -1,0 +1,21 @@
+.services {
+    
+
+    // box model
+    height: 700px;
+    padding: 70px;
+
+    // visual
+    background-color: #e8e8e8;
+
+    &__img {
+        // positioning
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        top: 300px;
+        left: 40px;
+    }
+}
