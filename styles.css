@@ -524,7 +524,7 @@ ul, p, h1, h2, h3, h4, h5 {
   margin-top: 150px;
   background-image: url("./img/price_background-content-lg.jpg");
   background-size: cover;
-  height: 100vh; }
+  min-height: 100vh; }
   .price__header {
     padding-left: 70px;
     height: 360px;
@@ -532,6 +532,20 @@ ul, p, h1, h2, h3, h4, h5 {
     background-image: url("./img/price_background-lg.png");
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
+    .price__header-title {
+      margin-bottom: 30px;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .price__header-copy {
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 2; }
+  .price__description {
+    padding: 50px; }
   .price__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -544,9 +558,17 @@ ul, p, h1, h2, h3, h4, h5 {
     border-radius: 35px; }
     .price__card:last-child {
       margin-right: 0; }
+    .price__card:hover {
+      border: #f5bc06; }
     .price__card-header {
       padding-top: 30px;
-      background-image: url("./img/services_present.png"); }
+      min-height: 390px;
+      background-image: url("./img/price-header-cosmetic.jpg"); }
+      .price__card-header--bg2 {
+        background-image: url("./img/price-header-capital.jpg"); }
+      .price__card-header--bg3 {
+        background-image: url("./img/price-header-design.jpg");
+        background-position: -30px 0; }
   .price__label {
     display: inline-block;
     vertical-align: top;
@@ -566,7 +588,7 @@ ul, p, h1, h2, h3, h4, h5 {
     line-height: 2rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    font-size: 1.25rem; }
+    font-size: 1rem; }
   .price__cost {
     color: #ffffff;
     font-size: 2.25rem;
@@ -574,9 +596,8 @@ ul, p, h1, h2, h3, h4, h5 {
     text-align: center; }
   .price__content {
     padding: 75px;
-    border: 2px solid #dcdcdc;
-    border-top: none;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    border: 2px solid #dadada; }
   .price__services-list {
     padding: 0;
     list-style: none; }
@@ -585,3 +606,9 @@ ul, p, h1, h2, h3, h4, h5 {
   .price__button {
     margin-top: -20px;
     text-align: center; }
+
+.price__card:hover .price__content {
+  border-color: #f5bc06; }
+
+.price__card:hover .price__label {
+  background-color: #f5bc06; }
