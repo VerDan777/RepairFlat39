@@ -91,4 +91,17 @@
             color: #1b348a;
         }
     }
+
+    &--inverse {
+        // box model
+        padding: 10px 30px;
+
+        // typography
+        font-size: 0.7rem;
+        font-weight: 300;
+        color: $black;
+
+        // visual
+        background-color: $yellow;
+    }
 }
