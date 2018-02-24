@@ -6,7 +6,7 @@
     // visual
     background-image: url("./img/price_background-content-lg.jpg");
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 
 
     &__header {
@@ -20,6 +20,32 @@
 
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
+
+
+        &-title {
+            // box model
+            margin-bottom: 30px;
+
+            // typography
+            color: $white;
+            font-family: $textFont;
+            font-weight: 300;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        &-copy {
+            // typography
+            color: $white;
+            font-size: 0.875rem;
+            line-height: 2;
+        }
+    }
+
+    &__description {
+        // box model
+        padding: 50px;
     }
 
     &__container {
@@ -38,6 +64,11 @@
             // box model
             margin-right: 0;
         }
+
+        &:hover {
+            border: $yellow;
+        }
+
         // visual
         width: 430px;
         border-radius: 35px;
@@ -45,11 +76,28 @@
         &-header {
             // box model
             padding-top: 30px;
+            min-height: 390px;
+
             // visual
             // background-size: contain;
-            background-image: url("./img/services_present.png");
+            background-image: url("./img/price-header-cosmetic.jpg");
+
+
+
+        &--bg2 {
+            // visual
+            background-image: url("./img/price-header-capital.jpg");
         }
+
+        &--bg3 {
+            // visual
+            background-image: url("./img/price-header-design.jpg");
+            background-position: -30px 0;
+            // background-size: contain;
+        }
+
     }
+}
 
     &__label {
 
@@ -81,7 +129,7 @@
         line-height: 2rem;
         font-family: $textFont;
         font-weight: 300;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     &__cost {
@@ -97,11 +145,11 @@
     &__content {
         // box model
         padding: 75px;
-        border: 2px solid #dcdcdc;
-        border-top: none;
 
         // visual
         background-color: $white;
+        border: 2px solid #dadada;
+
     }
     &__services-list {
         // box model
@@ -122,4 +170,14 @@
         // typography
         text-align: center;
     }
+}
+
+.price__card:hover .price__content {
+    // visual
+    border-color: $yellow;
+}
+
+.price__card:hover .price__label {
+    // visual
+    background-color: $yellow;
 }
