@@ -55,8 +55,40 @@
 
         // visual
         background-color: $textColor;
+        transition: 0.3s ease-in-out;
 
         // typography
         color: $white;
+
+        &:hover, active {
+            // visual
+            background-color: $yellow;
+
+            // typography
+            color: #1b348a;
+        }
+    }
+
+    &--price {
+        // box model
+        padding: 10px 60px;
+
+        // visual
+        background-color: $textColor;
+        transition: 0.3s ease-in-out;
+        
+        // typography
+        color: $white;
+        font-size: 0.875rem;
+        font-family: $textFont;
+        
+
+        &:hover, active {
+            // visual
+            background-color: $yellow;
+
+            // typography
+            color: #1b348a;
+        }
     }
 }

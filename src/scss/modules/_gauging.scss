@@ -1,0 +1,31 @@
+.gauging {
+    // positioning
+    position: relative;
+
+    // box model
+    margin-right: 70px;
+    display: flex;
+
+    // visual
+    background-image: url("./img/gauging_background-lg.png");
+    background-size: cover;
+    height: 250px;
+
+    &__hand {
+        // positioning
+        margin-top: -50px;
+        width: 450px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        // box model
+        display: flex;
+        flex-direction: column;
+        padding: 55px 0;
+    }
+
+}

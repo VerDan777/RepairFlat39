@@ -79,6 +79,93 @@ html(lang="ru")
                     p.services__copy Наш девиз - Быстро. Дешево.Надежно<br>Мы подходим к работе с проффесионализмом и<br>не допустим срывов и задержек сроков. 
                 img(src="./img/services_present.png" alt="RepairFlat39")
 
+            .services__features
+                ul.services__features-list
+                    
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/quality.png" alt="quality icon")
+                        h3.services__features-title quality
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/wallet.png" alt="quality icon")
+                        h3.services__features-title Best Price
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/shipping.png" alt="quality icon")
+                        h3.services__features-title Free Shipping
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/search.png" alt="quality icon")
+                        h3.services__features-title Easy Search
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/location.png" alt="quality icon")
+                        h3.services__features-title Great Locations
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/events.png" alt="quality icon")
+                        h3.services__features-title Events
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+        section.calculator
+            header.calculator__header
+                h4.calculator__title Рассчитайте<br>стоимость<br>ремонта
+                .calculator__price
+                    p.calculator__copy Просто введите данные вашей квартиры или офиса и посмотрите примерную стоимость работ согласно нашему прайсу услуг
+                    .calculator__button-price
+                        a.button.button--price(href="#") Прайс-лист
+
+            .calculator__content
+                .calculator__bid
+                    header.calculator__form-header
+                        h3.calculator__form-title Устраивает цена?<br>Оставить заявку
+                        ul.calculator__services-list
+                            li.calculator__badge: p 120 м<sup>2</sup>
+                            li.calculator__badge: p Косметический
+                            li.calculator__badge: p Жилое
+
+                    form.calculator__form(action="mail.php")
+                        .calculator__group
+                            label(for="name-bid") Имя
+                            input.calculator__input(type="text" name="name" placeholder="Кесорецких Иван Иванович")
+
+                        .calculator__group
+                            label(for="contacts-bid") Контактные детали
+                            input.calculator__input(type="email" name="email-bid" placeholder="E-mail")
+                            input.calculator__input(type="phone" name="phone-bid" placeholder="Телефон")
+
+                        .calculator__footer
+                            .calculator__button-bid
+                                a.button.button--send(href="#") Отправить
+                                p.hero__policy Заполняя форму вы соглашаетесь<br>с условиями обработки<br>персональных данных
+                    
+                .calculator__board
+                    .calculator__calculator
+                        h3.calculator__calculator-title Быстро расчитай<br>стоимость работ
+
+        section.gauging
+            .gauging__hand: img(src="./img/gauging-hand.png" alt="Ремонт квартир замер")
+            .gauging__content
+                p.gauging__subtitle  Мы позаботились обо всем
+                p.gauging__title Вызов замерщика - бесплатно!
+            .gauging__description
+                p.gauging__copy Оставьте заявку уже сегодня! и менеджер свяжется с вамив удобное для вас время выезд специалиста пн-пт  9<sup>00</sup>-20<sup>00</sup>
+            .gauging__button
+                a.button.button--send(href="#") Заказать замер
+                        
+
+
+
+
+
+
+
+
 
 
                     

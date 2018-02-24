@@ -1,7 +1,8 @@
 .services {
     
-
     // box model
+    display: flex;
+    align-items: center;
     height: 700px;
     padding: 70px;
 
@@ -11,11 +12,80 @@
     &__img {
         // positioning
         position: relative;
+
+        // box model
+        padding-right: 130px;   
+
+    }
+
+    &__title {
+        // box model
+        margin-bottom: 30px;
+
+        // typography
+        color: $white;
+        font-family: $textFont;
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+
+    &__copy {
+        // box model
+        
+        // typography
+        color: $white;
+        font-family: $textFont;
+        font-size: 1rem;
+        line-height: 1.5;
     }
 
     &__content {
+        // positioning
         position: absolute;
-        top: 300px;
+        top: 250px;
         left: 40px;
+    }
+
+    &__features-list {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        // visual
+        list-style: none;   
+    }
+
+    &__features-item {
+        // box model
+        width: 310px;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+
+    &__features-icon {
+        // box model
+        margin-bottom: 30px;
+    }
+
+    &__features-title {
+        // box model
+
+        // typography
+        font-family: $mainFont;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: $textColor;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    &__features-copy {
+        // box model
+        padding-top: 20px;
+
+        // typography
+        color: #898989;
+        line-height: 1.3;
     }
 }
