@@ -112,7 +112,7 @@ ul, p, h1, h2, h3, h4, h5 {
       text-transform: uppercase;
       letter-spacing: 1px; }
   .hero__form-input {
-    padding: 20px;
+    padding: 18px 20px;
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
@@ -160,7 +160,7 @@ ul, p, h1, h2, h3, h4, h5 {
   padding-right: 60px;
   padding-bottom: 20px; }
   .main-nav__buttons {
-    margin-top: 20px; }
+    margin-top: 23px; }
 
 .main-menu__list {
   padding: 0;
@@ -247,18 +247,79 @@ ul, p, h1, h2, h3, h4, h5 {
   .button--send {
     padding: 10px 40px;
     background-color: #4d5073;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     color: #ffffff; }
+    .button--send:hover, .button--send active {
+      background-color: #f5bc06;
+      color: #1b348a; }
+  .button--price {
+    padding: 10px 60px;
+    background-color: #4d5073;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-family: "Open Sans", sans-serif; }
+    .button--price:hover, .button--price active {
+      background-color: #f5bc06;
+      color: #1b348a; }
 
 .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 700px;
   padding: 70px;
   background-color: #e8e8e8; }
   .services__img {
-    position: relative; }
+    position: relative;
+    padding-right: 130px; }
+  .services__title {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem; }
+  .services__copy {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5; }
   .services__content {
     position: absolute;
-    top: 300px;
+    top: 250px;
     left: 40px; }
+  .services__features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style: none; }
+  .services__features-item {
+    width: 310px;
+    padding-bottom: 25px;
+    text-align: center; }
+  .services__features-icon {
+    margin-bottom: 30px; }
+  .services__features-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #4d5073;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+  .services__features-copy {
+    padding-top: 20px;
+    color: #898989;
+    line-height: 1.3; }
 
 .label {
   position: absolute;
@@ -272,3 +333,153 @@ ul, p, h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+.calculator {
+  position: relative;
+  padding: 0 70px;
+  padding-top: 100px;
+  padding-right: 0;
+  margin-bottom: 300px;
+  background-color: #ffffff; }
+  .calculator__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 100px; }
+  .calculator__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 290px; }
+  .calculator__title {
+    padding-right: 100px;
+    color: #4d5073;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5; }
+  .calculator__copy {
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #000000;
+    font-family: "Open Sans", sans-serif; }
+  .calculator__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .calculator__bid {
+    position: relative;
+    padding: 40px 35px;
+    padding-right: 250px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    background-color: rgba(90, 93, 127, 0.9);
+    border-radius: 5px; }
+  .calculator__form-title {
+    margin-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.875rem;
+    color: #ffffff;
+    font-weight: 300; }
+  .calculator__services-list {
+    padding: 0;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .calculator__badge {
+    padding: 5px 25px;
+    margin-right: 10px;
+    list-style: none;
+    background-color: #f5bc06;
+    border-radius: 35px;
+    color: #1b348a;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700; }
+  .calculator__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .calculator__group label {
+      padding-bottom: 15px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #ffffff; }
+  .calculator__input {
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e3e0da;
+    outline: none;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .calculator__input:hover, .calculator__input focus, .calculator__input active {
+      background-color: #ffffff; }
+  .calculator__footer {
+    position: absolute;
+    bottom: -75px; }
+  .calculator__board {
+    background-image: url("./img/calculator_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 71%;
+    height: 550px;
+    margin-left: -200px; }
+  .calculator__calculator {
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 75%;
+    bottom: -250px;
+    z-index: 2;
+    height: 100%;
+    width: 60%;
+    padding: 115px 130px;
+    background-image: url("./img/calculator_board.png");
+    background-repeat: no-repeat; }
+    .calculator__calculator-title {
+      text-align: left;
+      color: #4d5073;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 2.25rem; }
+
+.gauging {
+  position: relative;
+  margin-right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("./img/gauging_background-lg.png");
+  background-size: cover;
+  height: 250px; }
+  .gauging__hand {
+    margin-top: -50px;
+    width: 450px; }
+    .gauging__hand img {
+      width: 100%; }
+  .gauging__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 55px 0; }
