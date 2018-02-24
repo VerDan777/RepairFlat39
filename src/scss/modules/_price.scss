@@ -1,0 +1,125 @@
+.price {
+    // box model
+    padding-right: 70px;
+    margin-top: 150px;
+
+    // visual
+    background-image: url("./img/price_background-content-lg.jpg");
+    background-size: cover;
+    height: 100vh;
+
+
+    &__header {
+        // box model
+        padding-left: 70px;
+        height: 360px;
+
+        // visual
+        background-color: rgba($accent, 0.9);
+        background-image: url("./img/price_background-lg.png");
+
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    &__container {
+        // box model
+        display: flex;
+    }
+    &__card {
+        // positioning
+        position: relative;
+        
+        // box model
+        margin-top: -30px;
+        margin-right: 80px;
+
+        &:last-child {
+            // box model
+            margin-right: 0;
+        }
+        // visual
+        width: 430px;
+        border-radius: 35px;
+        
+        &-header {
+            // box model
+            padding-top: 30px;
+            // visual
+            // background-size: contain;
+            background-image: url("./img/services_present.png");
+        }
+    }
+
+    &__label {
+
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        padding: 23px; 
+        margin-bottom: 40px;
+
+        // visual
+        background-color: $white;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+
+        // typography
+        color: $textColor;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;        
+    }
+
+    &__title {
+        // box model
+        margin-bottom: 70px;
+        padding: 0 30px;
+
+        // typography
+        color: $white;
+        line-height: 2rem;
+        font-family: $textFont;
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+
+    &__cost {
+        // box model
+
+        // typography
+        color: $white;
+        font-size: 2.25rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__content {
+        // box model
+        padding: 75px;
+        border: 2px solid #dcdcdc;
+        border-top: none;
+
+        // visual
+        background-color: $white;
+    }
+    &__services-list {
+        // box model
+        padding: 0;
+        list-style: none;
+    }
+
+    &__services-item {
+        // box model
+        padding-bottom: 20px;
+    }
+
+    &__button {
+        // positioning
+
+        // box model
+        margin-top: -20px;
+        // typography
+        text-align: center;
+    }
+}

@@ -468,7 +468,9 @@ ul, p, h1, h2, h3, h4, h5 {
   display: flex;
   background-image: url("./img/gauging_background-lg.png");
   background-size: cover;
-  height: 250px; }
+  height: 250px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
   .gauging__hand {
     margin-top: -50px;
     width: 450px; }
@@ -482,4 +484,104 @@ ul, p, h1, h2, h3, h4, h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 55px 0; }
+    margin: 55px 0;
+    padding-right: 150px;
+    border-right-width: 4px;
+    border-right-color: #4d5073;
+    border-right-style: solid; }
+  .gauging__subtitle {
+    padding-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #878aab; }
+  .gauging__title {
+    color: #4d5073;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 900; }
+  .gauging__description {
+    position: relative;
+    display: inline-block;
+    padding-top: 70px;
+    padding-bottom: 0;
+    padding-left: 50px; }
+  .gauging__copy {
+    padding-bottom: 30px;
+    color: #000000;
+    font-weight: 600;
+    line-height: 1.5; }
+    .gauging__copy span {
+      display: inline-block;
+      color: #4e4d4d;
+      font-size: 0.75rem; }
+  .gauging__button {
+    position: absolute;
+    bottom: -20px; }
+
+.price {
+  padding-right: 70px;
+  margin-top: 150px;
+  background-image: url("./img/price_background-content-lg.jpg");
+  background-size: cover;
+  height: 100vh; }
+  .price__header {
+    padding-left: 70px;
+    height: 360px;
+    background-color: rgba(90, 93, 127, 0.9);
+    background-image: url("./img/price_background-lg.png");
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .price__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .price__card {
+    position: relative;
+    margin-top: -30px;
+    margin-right: 80px;
+    width: 430px;
+    border-radius: 35px; }
+    .price__card:last-child {
+      margin-right: 0; }
+    .price__card-header {
+      padding-top: 30px;
+      background-image: url("./img/services_present.png"); }
+  .price__label {
+    display: inline-block;
+    vertical-align: top;
+    padding: 23px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    color: #4d5073;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .price__title {
+    margin-bottom: 70px;
+    padding: 0 30px;
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem; }
+  .price__cost {
+    color: #ffffff;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center; }
+  .price__content {
+    padding: 75px;
+    border: 2px solid #dcdcdc;
+    border-top: none;
+    background-color: #ffffff; }
+  .price__services-list {
+    padding: 0;
+    list-style: none; }
+  .price__services-item {
+    padding-bottom: 20px; }
+  .price__button {
+    margin-top: -20px;
+    text-align: center; }
