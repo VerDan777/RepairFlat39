@@ -1,0 +1,91 @@
+.gauging {
+    // positioning
+    position: relative;
+
+    // box model
+    margin-right: 70px;
+    display: flex;
+
+    // visual
+    background-image: url("./img/gauging_background-lg.png");
+    background-size: cover;
+    height: 250px;
+    border-top-right-radius:  5px;
+    border-bottom-right-radius: 5px;
+
+    &__hand {
+        // positioning
+        margin-top: -50px;
+        width: 450px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        // box model
+        display: flex;
+        flex-direction: column;
+        margin: 55px 0;
+        padding-right: 150px;
+        border-right-width: 4px;
+        border-right-color: $textColor;
+        border-right-style: solid;
+    }
+    
+    &__subtitle {
+        // box model
+        padding-bottom: 30px;
+
+        // typography
+        font-family: $mainFont;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #878aab;
+    }
+
+    &__title {
+        // box model
+        // typography
+        color: $textColor;
+        font-family: $mainFont;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    &__description {
+        // positining
+        position: relative;
+
+        // box model
+        display: inline-block;
+        padding-top: 70px;
+        padding-bottom: 0;
+        padding-left: 50px;
+    }
+
+    &__copy {
+        // box model
+        padding-bottom: 30px;
+
+        // typography
+        color: $black;
+        font-weight: 600;
+        line-height: 1.5;
+
+        span {
+            // box model
+            display: inline-block;
+            color: #4e4d4d;
+            font-size: 0.75rem;
+        }
+    }
+
+    &__button {
+        // positioning
+        position: absolute;
+        bottom: -20px;
+    }
+
+}

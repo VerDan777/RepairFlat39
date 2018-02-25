@@ -1,0 +1,119 @@
+.site-footer {
+    // box model
+    padding: 70px;
+    display: flex;
+    // justify-content: space-between;
+
+    &__contacts {
+        // box model
+        padding-right: 150px;
+    }
+
+    &__contacts-block {
+         // box model
+         padding: 0 40px;
+         padding-bottom: 35px;
+
+         // typography
+         color: #7e8082;
+         font-size: 1.125rem;
+         line-height: 2;
+    }
+
+    &__menu {
+        // box model
+        padding: 0;
+        margin-top: 100px;
+        margin-right: 200px;
+
+        // visual
+        list-style: none;
+    }
+
+    &__menu-item {
+        // box model
+        padding-bottom: 30px;
+    }
+
+    &__menu-link {
+        color: #7e8082;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    &__form {
+        // box model
+        margin-top: 100px;
+        
+    }
+
+    &__form-header {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__form-title {
+        // box model
+
+        // typography
+        font-size: 1.125rem;
+        font-weight: 900;
+        color: $textColor;
+    }
+
+    &__form-work {
+        // typography
+        color: #636363;
+
+        span {
+            // typography
+            color: $textColor;
+        }
+    }
+
+    &__form-group {
+
+        input {
+            // box model
+            width: 400px;
+            padding: 20px 30px;
+            border: none;
+
+            // visual
+            background-color: #efefef;
+            outline: none;
+            transition: 0.3s ease-in-out;
+
+            // typography
+            color: $white;
+
+            &:hover,&:focus,&:active {
+                // visual
+                background-color: $accent;
+            }
+        }
+
+        textarea {
+            // box model
+            width: 100%;
+            padding: 20px 30px;
+            border: none;
+
+            // visual
+            background-color: #efefef;
+            outline: none;
+            transition: 0.3s ease-in-out;
+            resize: none;
+
+            // typography
+            color: $white;
+
+            &:hover,&:focus,&:active {
+                // visual
+                background-color: $accent;
+            }
+        }
+    }
+}

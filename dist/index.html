@@ -4,63 +4,449 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css"/>
     <title>RepairFlat39</title>
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header" id="abou">
       <nav class="main-nav">
-        <div class="logo"><img src="./img/logo.png" alt="logo"/></div>
-        <nav class="main-menu"> 
+        <div class="logo"><img src="./img/logo.png" alt="RepairFlat Logo"/></div>
+        <div class="main-menu">
           <ul class="main-menu__list">
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Наши работы</a></li>
-            <li><a href="#">Скидки</a></li>
-            <li><a href="#">Гарантии</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">услуги</a></li>
+            <li><a href="#works">Наши работы</a></li>
+            <li><a href="#offers">Скидки</a></li>
+            <li><a href="#guarantees">Гарантии</a></li>
+            <li><a href="#works">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="info">
-          <div class="info__icon"><img src="./img/phone-icon.svg"/></div>
-          <li><a href="tel: 335252">+7 (4012) 33 52 52</a></li>
-          <li><a href="tel: 335252">+7 (963) 738 52 52</a></li>
-        </ul>
-        <div class="main-nav__buttons"><a class="button button--online-call" href="#">Заказать звонок</a><a class="button button--calculator" href="#">Рассчитать стоимость ремонта</a></div>
+        </div>
+        <div class="info">
+          <div class="info__icon"><img src="./img/phone-icon.png"/></div>
+          <div class="info__contacts">
+            <li><a class="info__phone" href="tel:335252">+7 (4012) 33 52 52</a></li>
+            <li><a class="info__phone" href="tel:335252">+7 (963) 738 52 52</a></li>
+          </div>
+        </div>
+        <div class="main-nav__buttons"><a class="button button--online-record" href="#">Заказать звонок</a><a class="button button--calculator" href="#">Рассчитать стоимость ремонта</a></div>
       </nav>
       <section class="hero">
         <div class="hero__board">
-          <h2 class="hero__motto">Быстро.Дешево.Надежно</h2>
-          <h1 class="hero__title">Ремонт<br>квартиры<br>под “Ключ” <b> от 2500<b><span>руб. за м<sub>2</sub></span></h1>
-          <p class="hero__copy">Расчитайте стоимость ремонта в вашей квартире с нашим универсальным строительным калькулятором</p>
-          <div class="hero__button"><a class="button button--hero" href="#">Рассчитать стоимость ремонта</a></div>
+          <header class="hero__header">
+            <p class="hero__motto">Быстро.Дешево.Надежно</p>
+            <h1 class="hero__title">Ремонт<br>Квартиры<br>под ключ<br><b>от 2500</b><span>руб. за м<sup>2</sup></span></h1>
+          </header>
+          <div class="hero__content">
+            <p class="hero__copy">Расчитайте стоимость ремонта в вашей квартире с<br>нашим универсальным строительным калькулятором </p>
+            <div class="hero__button"><a class="button button--calculator button--hero" href="#">Рассчитать стоимость ремонта</a></div>
+          </div>
         </div>
-        <div class="hero__form">
-          <h3 class="hero__form-title">Оставьте заявку и мы свяжемся с вами</h3>
-          <p class="hero__form-description">мы работаем с 900 до 2000, без перерывов, Пн-Сб.</p>
-          <form class="hero__form" action="#">
+        <form class="hero__form" action="mail.php">
+          <header class="hero__form-header">
+            <h2 class="hero__form-title">Оставьте заявку<br> и мы свяжемся с вами</h2>
+            <p class="hero__form-description">мы работаем с 9<sup>00</sup> до 20<sup>00</sup>, без перерывов, <span>Пн-Сб</span></p>
+          </header>
+          <div class="hero__content">
             <div class="hero__form-group">
-              <label class="hero__form-label" for="name">Имя</label>
-              <input class="hero__form-input" type="text" name="name"/>
+              <label for="name">Имя</label>
+              <input class="hero__form-input" type="text" name="name" placeholder="Ваше имя"/>
             </div>
             <div class="hero__form-group">
-              <label class="hero__form-label" for="contacts">Контактные детали</label>
-              <input class="hero__form-input" type="email" name="email"/>
-              <inpit class="hero__form-input" type="phone" name="phone"></inpit>
+              <label for="contacts">Контактные детали</label>
+              <input class="hero__form-input" type="email" name="email" placeholder="E-mail"/>
+              <input class="hero__form-input" type="phone" name="phone" placeholder="Телефон "/>
             </div>
             <div class="hero__form-group">
               <label for="message">Сообщение</label>
               <textarea class="hero__form-textarea" placeholder="Текст"></textarea>
             </div>
-            <div class="hero__button hero__button--form"><a class="button button--arrive" href="#">Отправить</a></div>
-            <p class="hero__policy">Заполняя форму вы соглашаетесь с условиями обработки персональных данных.</p>
+          </div>
+          <div class="hero__form-button">
+            <div class="hero__form-buttons"><a class="button button--send" href="#">Отправить</a></div>
+            <p class="hero__policy">Заполняя форму вы соглашаетесь<br>с условиями обработки<br>персональных данных</p>
+          </div>
+        </form>
+      </section>
+      <div class="site-header__mock"><img src="./img/mock.png" alt="RepairFlat39 mock"/></div>
+    </header>
+    <section class="services" id="services">
+      <div class="services__img">
+        <p class="label">Услуги</p>
+        <div class="services__content">
+          <h4 class="services__title">Мы занимемся ремонтом<br>жилых и промышленных<br>помещений любой<br>сложности</h4>
+          <p class="services__copy">Наш девиз - Быстро. Дешево.Надежно<br>Мы подходим к работе с проффесионализмом и<br>не допустим срывов и задержек сроков. </p>
+        </div><img src="./img/services_present.png" alt="RepairFlat39"/>
+      </div>
+      <div class="services__features">
+        <ul class="services__features-list">
+          <li class="services__features-item">
+            <div class="services__features-icon"><img src="./img/quality.png" alt="quality icon"/></div>
+            <h3 class="services__features-title">quality</h3>
+            <p class="services__features-copy">As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.</p>
+          </li>
+          <li class="services__features-item">
+            <div class="services__features-icon"><img src="./img/wallet.png" alt="quality icon"/></div>
+            <h3 class="services__features-title">Best Price</h3>
+            <p class="services__features-copy">As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.</p>
+          </li>
+          <li class="services__features-item">
+            <div class="services__features-icon"><img src="./img/shipping.png" alt="quality icon"/></div>
+            <h3 class="services__features-title">Free Shipping</h3>
+            <p class="services__features-copy">As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.</p>
+          </li>
+          <li class="services__features-item">
+            <div class="services__features-icon"><img src="./img/search.png" alt="quality icon"/></div>
+            <h3 class="services__features-title">Easy Search</h3>
+            <p class="services__features-copy">As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.</p>
+          </li>
+          <li class="services__features-item">
+            <div class="services__features-icon"><img src="./img/location.png" alt="quality icon"/></div>
+            <h3 class="services__features-title">Great Locations</h3>
+            <p class="services__features-copy">As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.</p>
+          </li>
+          <li class="services__features-item">
+            <div class="services__features-icon"><img src="./img/events.png" alt="quality icon"/></div>
+            <h3 class="services__features-title">Events</h3>
+            <p class="services__features-copy">As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="calculator" id="calculator">
+      <header class="calculator__header">
+        <h4 class="calculator__title">Рассчитайте<br>стоимость<br>ремонта</h4>
+        <div class="calculator__price">
+          <p class="calculator__copy">Просто введите данные вашей квартиры или офиса и посмотрите примерную стоимость работ согласно нашему прайсу услуг</p>
+          <div class="calculator__button-price"><a class="button button--price" href="#">Прайс-лист</a></div>
+        </div>
+      </header>
+      <div class="calculator__content">
+        <div class="calculator__bid">
+          <header class="calculator__form-header">
+            <h3 class="calculator__form-title">Устраивает цена?<br>Оставить заявку</h3>
+            <ul class="calculator__services-list">
+              <li class="calculator__badge">
+                <p>120 м<sup>2</sup></p>
+              </li>
+              <li class="calculator__badge">
+                <p>Косметический</p>
+              </li>
+              <li class="calculator__badge">
+                <p>Жилое</p>
+              </li>
+            </ul>
+          </header>
+          <form class="calculator__form" action="mail.php">
+            <div class="calculator__group">
+              <label for="name-bid">Имя</label>
+              <input class="calculator__input" type="text" name="name" placeholder="Кесорецких Иван Иванович"/>
+            </div>
+            <div class="calculator__group">
+              <label for="contacts-bid">Контактные детали</label>
+              <input class="calculator__input" type="email" name="email-bid" placeholder="E-mail"/>
+              <input class="calculator__input" type="phone" name="phone-bid" placeholder="Телефон"/>
+            </div>
+            <div class="calculator__footer">
+              <div class="calculator__button-bid"><a class="button button--send" href="#">Отправить</a>
+                <p class="hero__policy">Заполняя форму вы соглашаетесь<br>с условиями обработки<br>персональных данных</p>
+              </div>
+            </div>
           </form>
         </div>
-      </section>
-      <div class="site-header__mock"><img src="./img/mock.png"/></div>
-    </header>
+        <div class="calculator__board">
+          <div class="calculator__calculator">
+            <h3 class="calculator__calculator-title">Быстро расчитай<br>стоимость работ</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gauging">
+      <div class="gauging__hand"><img src="./img/gauging-hand.png" alt="Ремонт квартир замер"/></div>
+      <div class="gauging__content">
+        <p class="gauging__subtitle"> Мы позаботились обо всем</p>
+        <p class="gauging__title">Вызов замерщика - бесплатно!</p>
+      </div>
+      <div class="gauging__description">
+        <p class="gauging__copy">Оставьте заявку уже сегодня!<br> и менеджер свяжется с вами <br>в удобное для вас время<br> <span>выезд специалиста пн-пт  9<sup>00</sup>&nbsp;-20<sup>00</sup></span></p>
+        <div class="gauging__button"><a class="button button--send" href="#">Заказать замер</a></div>
+      </div>
+    </section>
+    <section class="price" id="price">
+      <header class="price__header">
+        <div class="price__container">
+          <article class="price__card">
+            <header class="price__card-header">
+              <div class="price__label">Косметический</div>
+              <h3 class="price__title">Подходит для быстрого<br>обновления интерьера<br>в жилых помещениях</h3>
+              <p class="price__cost">от 1500 руб <br>кв. метр</p>
+            </header>
+            <div class="price__content">
+              <ul class="price__services-list">
+                <li class="price__services-item">Демонтаж старых покрытий</li>
+                <li class="price__services-item">Полная или частичная замена непригодных элементов пола </li>
+                <li class="price__services-item">Замена водоканализационных внутренних коммуникаций</li>
+                <li class="price__services-item">Замена сантехники</li>
+                <li class="price__services-item">Замена электроприборов учета и замена старой  электропроводки</li>
+                <li class="price__services-item">Замена настенных покрытий</li>
+              </ul>
+            </div>
+            <div class="price__button"><a class="button button--send">Заказать ремонт</a></div>
+          </article>
+          <article class="price__card">
+            <header class="price__card-header price__card-header--bg2">
+              <div class="price__label">Капитальный</div>
+              <h3 class="price__title">Оптимальный выбор для ремонта в новостройке или полной смены интерьера</h3>
+              <p class="price__cost">от 2500 руб <br>кв. метр</p>
+            </header>
+            <div class="price__content">
+              <ul class="price__services-list">
+                <li class="price__services-item">Демонтаж старых покрытий</li>
+                <li class="price__services-item">Полная или частичная замена непригодных элементов пола </li>
+                <li class="price__services-item">Замена водоканализационных внутренних коммуникаций</li>
+                <li class="price__services-item">Замена сантехники</li>
+                <li class="price__services-item">Замена электроприборов учета и замена старой  электропроводки</li>
+                <li class="price__services-item">Замена настенных покрытий</li>
+              </ul>
+            </div>
+            <div class="price__button"><a class="button button--send">Заказать ремонт</a></div>
+          </article>
+          <article class="price__card">
+            <header class="price__card-header price__card-header--bg3">
+              <div class="price__label">Дизайнерский</div>
+              <h3 class="price__title">Создание уникального интерьера по дизайн-проекту, включает услугу авторского надзора</h3>
+              <p class="price__cost">от 4500 руб <br>кв. метр</p>
+            </header>
+            <div class="price__content">
+              <ul class="price__services-list">
+                <li class="price__services-item">Демонтаж старых покрытий</li>
+                <li class="price__services-item">Полная или частичная замена непригодных элементов пола </li>
+                <li class="price__services-item">Замена водоканализационных внутренних коммуникаций</li>
+                <li class="price__services-item">Замена сантехники</li>
+                <li class="price__services-item">Замена электроприборов учета и замена старой  электропроводки</li>
+                <li class="price__services-item">Замена настенных покрытий</li>
+              </ul>
+            </div>
+            <div class="price__button"><a class="button button--send">Заказать ремонт</a></div>
+          </article>
+          <div class="price__description">
+            <h4 class="price__header-title">Прайс-лист<br> на наши<br>услуги</h4>
+            <p class="price__header-copy">Пакетные предложения<br>предоставляемые нашей компанией<br>подойдут для <br>ремонта любых помещений</p>
+          </div>
+        </div>
+      </header>
+    </section>
+    <section class="offers" id="offers">
+      <header class="offers__header">
+        <h3 class="offers__title">Акции<br> и скидки</h3>
+      </header>
+      <div class="offers__container">
+        <div class="offers__img"><img src="./img/offers_roofs.jpg" alt="Ремонт квартир  скидка на потолки"/>
+          <div class="offers__content">
+            <p class="offers__suggestion">Натяжные потолки в подарок</p>
+            <p class="offers__description">При комплексном ремонте под ключ</p>
+          </div>
+        </div>
+        <div class="offers__img"><img src="./img/offers_family.jpg" alt="Ремонт квартир скидка для пенсионеров"/>
+          <div class="offers__content">
+            <p class="offers__suggestion">5%</p>
+            <p class="offers__description">Скидка пенсионерам<br> на услуги ремонта</p>
+          </div>
+        </div>
+        <div class="offers__img"> <img src="./img/offers-pensioners.jpg" alt="Ремонт квартир скидка для многодетных семей"/>
+          <div class="offers__content">
+            <p class="offers__suggestion">5%</p>
+            <p class="offers__description">Скидка многодетным<br> на услуги ремонта</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works" id="works">
+      <div class="works__detailed">
+        <div class="works__board">
+          <header class="works__detailed-header">
+            <p class="works__subtitle">Жилые помещения</p>
+            <p class="works__title">Двухкомнатная<br>квартира<br>на ул. Окская </p>
+          </header>
+          <div class="works__board-content">
+            <p class="works__flat-size">22 кв. метра</p>
+            <p class="works__copy">В список работ по объекту входило: ремонт системы отопления и замена сан.технчиеского оборудования, а также комплексный ремонт с заменом элементов интерьера в двух жилых комнатах.</p>
+            <div class="works__button"><a class="button button--send button--inverse" href="#">Посмотреть ремонт "До" и "После"</a></div>
+          </div>
+        </div>
+        <div class="works__img"><img src="./img/works_background.jpg" alt="Ремонт квартир подробное описание"/></div>
+      </div>
+      <div class="works__content">
+        <header class="works__card-header">
+          <h3 class="works__card-mainTitle">Наши<br>работы</h3>
+          <p class="works__card-copy">Информация<br>проектах<br>реализованных<br>нашей<br>компанией</p>
+        </header>
+        <div class="works__card-content">
+          <article class="works__card">
+            <div class="works__card-img"><img src="./img/card_background.jpg" alt="Ремонт Квартир в Калининграде карточка"/></div>
+            <div class="works__card-footer">
+              <p class="works__card-title">Артиллерийская</p>
+              <p class="works__description">Однокомнатная 22 кв. метра </p>
+            </div>
+          </article>
+          <article class="works__card">
+            <div class="works__card-img"><img src="./img/card_background.jpg" alt="Ремонт Квартир в Калининграде карточка"/></div>
+            <div class="works__card-footer">
+              <p class="works__card-title">Артиллерийская</p>
+              <p class="works__description">Однокомнатная 22 кв. метра </p>
+            </div>
+          </article>
+          <article class="works__card">
+            <div class="works__card-img"><img src="./img/card_background.jpg" alt="Ремонт Квартир в Калининграде карточка"/></div>
+            <div class="works__card-footer">
+              <p class="works__card-title">Артиллерийская</p>
+              <p class="works__description">Однокомнатная 22 кв. метра </p>
+            </div>
+          </article>
+          <article class="works__card">
+            <div class="works__card-img"><img src="./img/card_background.jpg" alt="Ремонт Квартир в Калининграде карточка"/></div>
+            <div class="works__card-footer">
+              <p class="works__card-title">Артиллерийская</p>
+              <p class="works__description">Однокомнатная 22 кв. метра </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="guarantees" id="guarantees">
+      <div class="guarantees__list-features">
+        <header class="guarantees__header">
+          <h3 class="guarantees__title">Наши<br> гарантии</h3>
+          <p class="guarantees__copy">На все производимые<br>работы и услуги</p>
+        </header>
+        <ul class="guarantees__list">
+          <li class="guarantees__item">
+            <div class="guarantees__icon"><img src="./img/icon.png" alt="Ремонт квартир оптимальные сроки"/></div>
+            <div class="guarantees__item-content">
+              <h4 class="guarantees__feature-title">Оптимальные сроки</h4>
+              <p class="guarantees__feature-text">Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire</p>
+            </div>
+          </li>
+          <li class="guarantees__item">
+            <div class="guarantees__icon"><img src="./img/icon.png" alt="Ремонт квартир гарантия качества"/></div>
+            <div class="guarantees__item-content">
+              <h4 class="guarantees__feature-title">Гарантия качества</h4>
+              <p class="guarantees__feature-text">Looking cautiously round, to ascertain that they were not<br>overheard, the two hags cowered nearer to the fire</p>
+            </div>
+          </li>
+          <li class="guarantees__item">
+            <div class="guarantees__icon"><img src="./img/icon.png" alt="Ремонт квартир оформление по договору"/></div>
+            <div class="guarantees__item-content">
+              <h4 class="guarantees__feature-title">Оформление по договору</h4>
+              <p class="guarantees__feature-text">Looking cautiously round, to ascertain that they were not<br>overheard, the two hags cowered nearer to the fire</p>
+            </div>
+          </li>
+          <li class="guarantees__item">
+            <div class="guarantees__icon"><img src="./img/icon.png" alt="Ремонт квартир оптимальные сроки"/></div>
+            <div class="guarantees__item-content">
+              <h4 class="guarantees__feature-title">Оптимальные сроки</h4>
+              <p class="guarantees__feature-text">Looking cautiously round, to ascertain that they were not<br>overheard, the two hags cowered nearer to the fire</p>
+            </div>
+          </li>
+          <li class="guarantees__item">
+            <div class="guarantees__icon"><img src="./img/icon.png" alt="Ремонт квартир оптимальные сроки"/></div>
+            <div class="guarantees__item-content">
+              <h4 class="guarantees__feature-title">Оптимальные сроки</h4>
+              <p class="guarantees__feature-text">Looking cautiously round, to ascertain that they were not<br>overheard, the two hags cowered nearer to the fire</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="guarantees__cards">
+        <article class="guarantees__card">
+          <div class="guarantees__card-left-side">
+            <header class="guarantees__card-header">
+              <div class="guarantees__card-avatar"><img src="./img/guarantees_avatar1.jpg" alt="Ремонт квартир отзыв 1"/></div><b class="guarantees__card-person">Олег Иванов</b>
+              <p class="guarantees__card-subtitle">Однокомнатная на Окской</p>
+            </header>
+            <div class="guarantees__card-content">
+              <p class="guarantees__card-copy">Отличная работа, качественно и в срок. Очень довольна результатом. Рекомендую эту компанию<br><a>читать полностью</a></p>
+            </div>
+          </div>
+          <div class="guarantees__card-right-side"><img src="./img/card_guarantees1.jpg"/></div>
+        </article>
+        <article class="guarantees__card">
+          <div class="guarantees__card-left-side">
+            <header class="guarantees__card-header">
+              <div class="guarantees__card-avatar"><img src="./img/guarantees_avatar2.jpg" alt="Ремонт квартир отзыв 1"/></div><b class="guarantees__card-person">Сергей Николаев</b>
+              <p class="guarantees__card-subtitle">Однокомнатная на Окской</p>
+            </header>
+            <div class="guarantees__card-content">
+              <p class="guarantees__card-copy">Отличная работа, качественно и в срок. Очень довольна результатом. Рекомендую эту компанию<br><a>читать полностью</a></p>
+            </div>
+          </div>
+          <div class="guarantees__card-right-side"><img src="./img/card_guarantees2.jpg"/></div>
+        </article>
+        <article class="guarantees__card">
+          <div class="guarantees__card-left-side">
+            <header class="guarantees__card-header">
+              <div class="guarantees__card-avatar"><img src="./img/guarantees_avatar3.jpg" alt="Ремонт квартир отзыв 1"/></div><b class="guarantees__card-person">Иван Сергеев</b>
+              <p class="guarantees__card-subtitle">Однокомнатная на Окской</p>
+            </header>
+            <div class="guarantees__card-content">
+              <p class="guarantees__card-copy">Отличная работа, качественно и в срок. Очень довольна результатом. Рекомендую эту компанию<br><a>читать полностью</a></p>
+            </div>
+          </div>
+          <div class="guarantees__card-right-side"><img src="./img/card_guarantees3.jpg"/></div>
+        </article>
+        <article class="guarantees__card">
+          <div class="guarantees__card-left-side">
+            <header class="guarantees__card-header">
+              <div class="guarantees__card-avatar"><img src="./img/guarantees_avatar4.jpg" alt="Ремонт квартир отзыв 1"/></div><b class="guarantees__card-person">Николай Иванов</b>
+              <p class="guarantees__card-subtitle">Однокомнатная на Окской</p>
+            </header>
+            <div class="guarantees__card-content">
+              <p class="guarantees__card-copy">Отличная работа, качественно и в срок. Очень довольна результатом. Рекомендую эту компанию<br><a>читать полностью</a></p>
+            </div>
+          </div>
+          <div class="guarantees__card-right-side"><img src="./img/card_guarantees4.jpg"/></div>
+        </article>
+      </div>
+    </section>
+    <footer class="site-footer" id="contacts">
+      <div class="site-footer__contacts">
+        <div class="site-footer__logo"><img src="./img/logo.png" alt="Ремонт квартир лого"/></div>
+        <div class="site-footer__contacts-block">
+          <div class="site-footer__text">г. Калининград<br> ул. Ст. Лейтенанта Сибрякова, 21</div>
+        </div>
+        <div class="site-footer__contacts-block">
+          <div class="site-footer__text">Позвоните нам по телефону:<br> +7 (4012) 33-52-52</div>
+        </div>
+        <div class="site-footer__contacts-block">
+          <div class="site-footer__text">Оставьте заявку:<br> teplograd39@mail.ru</div>
+        </div>
+      </div>
+      <ul class="site-footer__menu">
+        <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Главная</a></li>
+        <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">О нас</a></li>
+        <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Услуги</a></li>
+        <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Прайс-лист</a></li>
+        <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Скидки</a></li>
+        <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Наши работы</a></li>
+        <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Отзывы</a></li>
+        <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Контакты</a></li>
+      </ul>
+      <form class="site-footer__form" id="form--footer" action="mail.php">
+        <header class="site-footer__form-header">
+          <p class="site-footer__form-title">Оставьте заявку<br>и мы свяжемся с вами</p>
+          <p class="site-footer__form-work">мы работаем с 9<sup>00</sup> до 20<sup>00</sup>, без перерывов, <span>Пн-Сб</span></p>
+        </header>
+        <div class="site-footer__form-group">
+          <input type="text" name="name" placeholder="John"/>
+          <input type="email" name="email" placeholder="E-mail"/>
+        </div>
+        <div class="site-footer__form-group">
+          <textarea placeholder="Сообщение" name="message"></textarea>
+        </div>
+        <div class="site-footer__button"><a class="button button--send" href="#">Отправить</a></div>
+      </form>
+    </footer>
   </body>
 </html>

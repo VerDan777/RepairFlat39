@@ -4,66 +4,398 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet")
-        link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet")
         link(rel="stylesheet", href="styles.css")
         title RepairFlat39
     body
-        header.site-header
+        header.site-header#abou
             nav.main-nav
                 .logo
-                    img(src="./img/logo.png" alt="logo")
-                    //- p.logo__text Ремонт
-                    //- p.logo__text.logo__text--small Квартир
-                    //- sup.logo__suptitle в калининграде
-                nav.main-menu  
+                    img(src="./img/logo.png" alt="RepairFlat Logo")
+                .main-menu
                     ul.main-menu__list
-                        li: a(href="#") О нас
-                        li: a(href="#") Услуги
-                        li: a(href="#") Наши работы
-                        li: a(href="#") Скидки
-                        li: a(href="#") Гарантии
-                        li: a(href="#") Отзывы
-                        li: a(href="#") Контакты
+                        li: a(href="#about") О нас
+                        li: a(href="#services") услуги
+                        li: a(href="#works") Наши работы
+                        li: a(href="#offers") Скидки
+                        li: a(href="#guarantees") Гарантии
+                        li: a(href="#works") Отзывы
+                        li: a(href="#contacts") Контакты
 
-                ul.info
+                        
+                .info
                     .info__icon
-                        img(src="./img/phone-icon.svg")
-                    li: a(href="tel: 335252") +7 (4012) 33 52 52
-                    li: a(href="tel: 335252") +7 (963) 738 52 52
+                        img(src="./img/phone-icon.png")
+                    .info__contacts
+                        li: a.info__phone(href="tel:335252") +7 (4012) 33 52 52
+                        li: a.info__phone(href="tel:335252") +7 (963) 738 52 52
 
                 .main-nav__buttons
-                    a.button.button--online-call(href="#") Заказать звонок
+                    a.button.button--online-record(href="#") Заказать звонок
                     a.button.button--calculator(href="#") Рассчитать стоимость ремонта
             
             section.hero
                 .hero__board
-                    h2.hero__motto Быстро.Дешево.Надежно
-                    h1.hero__title Ремонт<br>квартиры<br>под “Ключ” <b> от 2500<b><span>руб. за м<sub>2</sub></span>
-                    p.hero__copy Расчитайте стоимость ремонта в вашей квартире с нашим универсальным строительным калькулятором
-                    .hero__button
-                        a.button.button--hero(href="#") Рассчитать стоимость ремонта
-                .hero__form
-                    h3.hero__form-title Оставьте заявку и мы свяжемся с вами
-                    p.hero__form-description мы работаем с 900 до 2000, без перерывов, Пн-Сб.
+                    header.hero__header
+                        p.hero__motto Быстро.Дешево.Надежно
+                        h1.hero__title Ремонт<br>Квартиры<br>под ключ<br><b>от 2500</b><span>руб. за м<sup>2</sup></span>
+                    .hero__content
+                        p.hero__copy Расчитайте стоимость ремонта в вашей квартире с<br>нашим универсальным строительным калькулятором 
+                        .hero__button
+                            a.button.button--calculator.button--hero(href="#") Рассчитать стоимость ремонта
+                    
+                form.hero__form(action="mail.php")
+                    header.hero__form-header
+                        h2.hero__form-title Оставьте заявку<br> и мы свяжемся с вами
+                        p.hero__form-description мы работаем с 9<sup>00</sup> до 20<sup>00</sup>, без перерывов, <span>Пн-Сб</span>
 
-                    form.hero__form(action="#")
+                    .hero__content
                         .hero__form-group
-                            label.hero__form-label(for="name") Имя
-                            input.hero__form-input(type="text" name="name")
+                            label(for="name") Имя
+                            input.hero__form-input(type="text" name="name" placeholder="Ваше имя")
+
                         .hero__form-group
-                            label.hero__form-label(for="contacts") Контактные детали
-                            input.hero__form-input(type="email" name="email")
-                            inpit.hero__form-input(type="phone" name="phone")
+                            label(for="contacts") Контактные детали
+                            input.hero__form-input(type="email" name="email" placeholder="E-mail")
+                            input.hero__form-input(type="phone" name="phone" placeholder="Телефон ")
+                            
+
                         .hero__form-group
                             label(for="message") Сообщение
                             textarea.hero__form-textarea(placeholder="Текст")
-                        .hero__button.hero__button--form
-                            a.button.button--arrive(href="#") Отправить
-                        p.hero__policy Заполняя форму вы соглашаетесь с условиями обработки персональных данных.
+                    .hero__form-button
+                        .hero__form-buttons
+                            a.button.button--send(href="#") Отправить
+                        p.hero__policy Заполняя форму вы соглашаетесь<br>с условиями обработки<br>персональных данных
 
             .site-header__mock
-                img(src="./img/mock.png")
+                img(src="./img/mock.png" alt="RepairFlat39 mock")
 
+        section.services#services
+            .services__img
+                p.label Услуги
+                .services__content
+                    h4.services__title Мы занимемся ремонтом<br>жилых и промышленных<br>помещений любой<br>сложности
+                    p.services__copy Наш девиз - Быстро. Дешево.Надежно<br>Мы подходим к работе с проффесионализмом и<br>не допустим срывов и задержек сроков. 
+                img(src="./img/services_present.png" alt="RepairFlat39")
 
-                        
+            .services__features
+                ul.services__features-list
+                    
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/quality.png" alt="quality icon")
+                        h3.services__features-title quality
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/wallet.png" alt="quality icon")
+                        h3.services__features-title Best Price
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/shipping.png" alt="quality icon")
+                        h3.services__features-title Free Shipping
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/search.png" alt="quality icon")
+                        h3.services__features-title Easy Search
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/location.png" alt="quality icon")
+                        h3.services__features-title Great Locations
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+                    li.services__features-item
+                        .services__features-icon: img(src="./img/events.png" alt="quality icon")
+                        h3.services__features-title Events
+                        p.services__features-copy As we passed, I remarked a beautiful church-spire rising above some old elms in the park; and before them, in the midst of a lawn.
+
+        section.calculator#calculator
+            header.calculator__header
+                h4.calculator__title Рассчитайте<br>стоимость<br>ремонта
+                .calculator__price
+                    p.calculator__copy Просто введите данные вашей квартиры или офиса и посмотрите примерную стоимость работ согласно нашему прайсу услуг
+                    .calculator__button-price
+                        a.button.button--price(href="#") Прайс-лист
+
+            .calculator__content
+                .calculator__bid
+                    header.calculator__form-header
+                        h3.calculator__form-title Устраивает цена?<br>Оставить заявку
+                        ul.calculator__services-list
+                            li.calculator__badge: p 120 м<sup>2</sup>
+                            li.calculator__badge: p Косметический
+                            li.calculator__badge: p Жилое
+
+                    form.calculator__form(action="mail.php")
+                        .calculator__group
+                            label(for="name-bid") Имя
+                            input.calculator__input(type="text" name="name" placeholder="Кесорецких Иван Иванович")
+
+                        .calculator__group
+                            label(for="contacts-bid") Контактные детали
+                            input.calculator__input(type="email" name="email-bid" placeholder="E-mail")
+                            input.calculator__input(type="phone" name="phone-bid" placeholder="Телефон")
+
+                        .calculator__footer
+                            .calculator__button-bid
+                                a.button.button--send(href="#") Отправить
+                                p.hero__policy Заполняя форму вы соглашаетесь<br>с условиями обработки<br>персональных данных
+                    
+                .calculator__board
+                    .calculator__calculator
+                        h3.calculator__calculator-title Быстро расчитай<br>стоимость работ
+
+        section.gauging
+            .gauging__hand: img(src="./img/gauging-hand.png" alt="Ремонт квартир замер")
+            .gauging__content
+                p.gauging__subtitle  Мы позаботились обо всем
+                p.gauging__title Вызов замерщика - бесплатно!
+            .gauging__description
+                p.gauging__copy Оставьте заявку уже сегодня!<br> и менеджер свяжется с вами <br>в удобное для вас время<br> <span>выезд специалиста пн-пт  9<sup>00</sup>&nbsp;-20<sup>00</sup></span>
+                .gauging__button
+                    a.button.button--send(href="#") Заказать замер
+        
+        
+        section.price#price
+            header.price__header
+                .price__container
+                    article.price__card
+                        header.price__card-header
+                            .price__label Косметический
+                            h3.price__title Подходит для быстрого<br>обновления интерьера<br>в жилых помещениях
+                            p.price__cost от 1500 руб <br>кв. метр
+                        .price__content
+                            ul.price__services-list
+                                li.price__services-item Демонтаж старых покрытий
+                                li.price__services-item Полная или частичная замена непригодных элементов пола 
+                                li.price__services-item Замена водоканализационных внутренних коммуникаций
+                                li.price__services-item Замена сантехники
+                                li.price__services-item Замена электроприборов учета и замена старой  электропроводки
+                                li.price__services-item Замена настенных покрытий
+                        .price__button
+                            a.button.button--send Заказать ремонт
+
+                    article.price__card
+                        header.price__card-header.price__card-header--bg2
+                            .price__label Капитальный
+                            h3.price__title Оптимальный выбор для ремонта в новостройке или полной смены интерьера
+                            p.price__cost от 2500 руб <br>кв. метр
+                        .price__content
+                            ul.price__services-list
+                                li.price__services-item Демонтаж старых покрытий
+                                li.price__services-item Полная или частичная замена непригодных элементов пола 
+                                li.price__services-item Замена водоканализационных внутренних коммуникаций
+                                li.price__services-item Замена сантехники
+                                li.price__services-item Замена электроприборов учета и замена старой  электропроводки
+                                li.price__services-item Замена настенных покрытий
+                        .price__button
+                            a.button.button--send Заказать ремонт
+
+                    article.price__card
+                        header.price__card-header.price__card-header--bg3
+                            .price__label Дизайнерский
+                            h3.price__title Создание уникального интерьера по дизайн-проекту, включает услугу авторского надзора
+                            p.price__cost от 4500 руб <br>кв. метр
+                        .price__content
+                            ul.price__services-list
+                                li.price__services-item Демонтаж старых покрытий
+                                li.price__services-item Полная или частичная замена непригодных элементов пола 
+                                li.price__services-item Замена водоканализационных внутренних коммуникаций
+                                li.price__services-item Замена сантехники
+                                li.price__services-item Замена электроприборов учета и замена старой  электропроводки
+                                li.price__services-item Замена настенных покрытий
+                        .price__button
+                            a.button.button--send Заказать ремонт
+                    .price__description
+                        h4.price__header-title Прайс-лист<br> на наши<br>услуги
+                        p.price__header-copy Пакетные предложения<br>предоставляемые нашей компанией<br>подойдут для <br>ремонта любых помещений
+        
+        
+        section.offers#offers
+            header.offers__header
+                h3.offers__title Акции<br> и скидки
+            .offers__container
+                .offers__img
+                    img(src="./img/offers_roofs.jpg" alt="Ремонт квартир  скидка на потолки")
+                    .offers__content
+                        p.offers__suggestion Натяжные потолки в подарок
+                        p.offers__description При комплексном ремонте под ключ
+
+                .offers__img
+                    img(src="./img/offers_family.jpg" alt="Ремонт квартир скидка для пенсионеров")
+                    .offers__content
+                        p.offers__suggestion 5%
+                        p.offers__description Скидка пенсионерам<br> на услуги ремонта
+                .offers__img 
+                    img(src="./img/offers-pensioners.jpg" alt="Ремонт квартир скидка для многодетных семей")
+                    .offers__content
+                        p.offers__suggestion 5%
+                        p.offers__description Скидка многодетным<br> на услуги ремонта
+        
+        section.works#works
+            .works__detailed
+                .works__board
+                    header.works__detailed-header
+                        p.works__subtitle Жилые помещения
+                        p.works__title Двухкомнатная<br>квартира<br>на ул. Окская 
+                    .works__board-content
+                        p.works__flat-size 22 кв. метра
+                        p.works__copy В список работ по объекту входило: ремонт системы отопления и замена сан.технчиеского оборудования, а также комплексный ремонт с заменом элементов интерьера в двух жилых комнатах.
+                        .works__button
+                            a.button.button--send.button--inverse(href="#") Посмотреть ремонт "До" и "После"
+                .works__img: img(src="./img/works_background.jpg" alt="Ремонт квартир подробное описание")
+
+            .works__content
+                header.works__card-header
+                    h3.works__card-mainTitle Наши<br>работы
+                    p.works__card-copy Информация<br>проектах<br>реализованных<br>нашей<br>компанией
+
+                .works__card-content
+                    article.works__card
+                        .works__card-img: img(src="./img/card_background.jpg" alt="Ремонт Квартир в Калининграде карточка")
+                        .works__card-footer
+                            p.works__card-title Артиллерийская
+                            p.works__description Однокомнатная 22 кв. метра 
+
+                    article.works__card
+                        .works__card-img: img(src="./img/card_background.jpg" alt="Ремонт Квартир в Калининграде карточка")
+                        .works__card-footer
+                            p.works__card-title Артиллерийская
+                            p.works__description Однокомнатная 22 кв. метра 
+
+                    article.works__card
+                        .works__card-img: img(src="./img/card_background.jpg" alt="Ремонт Квартир в Калининграде карточка")
+                        .works__card-footer
+                            p.works__card-title Артиллерийская
+                            p.works__description Однокомнатная 22 кв. метра 
+
+                    article.works__card
+                       .works__card-img: img(src="./img/card_background.jpg" alt="Ремонт Квартир в Калининграде карточка")
+                       .works__card-footer
+                            p.works__card-title Артиллерийская
+                            p.works__description Однокомнатная 22 кв. метра 
+
+            //- .works__offer
+            //-     h3.works__question Хотите себе<br>такой же<br>ремонт?
+            //-     p.works__offer-copy Просто оставьте заявку.<br>И мы свяжемся с вами<br>в ближайшее время
+            //-     .works__offer-button
+            //-         a.button.button--send(href="#") Заказать
+        
+        section.guarantees#guarantees
+            .guarantees__list-features
+                header.guarantees__header
+                    h3.guarantees__title Наши<br> гарантии
+                    p.guarantees__copy На все производимые<br>работы и услуги
+                ul.guarantees__list
+                    li.guarantees__item
+                        .guarantees__icon: img(src="./img/icon.png" alt="Ремонт квартир оптимальные сроки")
+                        .guarantees__item-content
+                            h4.guarantees__feature-title Оптимальные сроки
+                            p.guarantees__feature-text Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire
+
+                    li.guarantees__item
+                        .guarantees__icon: img(src="./img/icon.png" alt="Ремонт квартир гарантия качества")
+                        .guarantees__item-content
+                            h4.guarantees__feature-title Гарантия качества
+                            p.guarantees__feature-text Looking cautiously round, to ascertain that they were not<br>overheard, the two hags cowered nearer to the fire
+
+                    li.guarantees__item
+                        .guarantees__icon: img(src="./img/icon.png" alt="Ремонт квартир оформление по договору")
+                        .guarantees__item-content
+                            h4.guarantees__feature-title Оформление по договору
+                            p.guarantees__feature-text Looking cautiously round, to ascertain that they were not<br>overheard, the two hags cowered nearer to the fire
+
+                    li.guarantees__item
+                        .guarantees__icon: img(src="./img/icon.png" alt="Ремонт квартир оптимальные сроки")
+                        .guarantees__item-content
+                            h4.guarantees__feature-title Оптимальные сроки
+                            p.guarantees__feature-text Looking cautiously round, to ascertain that they were not<br>overheard, the two hags cowered nearer to the fire
+
+                    li.guarantees__item
+                        .guarantees__icon: img(src="./img/icon.png" alt="Ремонт квартир оптимальные сроки")
+                        .guarantees__item-content
+                            h4.guarantees__feature-title Оптимальные сроки
+                            p.guarantees__feature-text Looking cautiously round, to ascertain that they were not<br>overheard, the two hags cowered nearer to the fire
+
+            .guarantees__cards
+                article.guarantees__card
+                    .guarantees__card-left-side
+                        header.guarantees__card-header
+                            .guarantees__card-avatar: img(src="./img/guarantees_avatar1.jpg" alt="Ремонт квартир отзыв 1")
+                            b.guarantees__card-person Олег Иванов
+                            p.guarantees__card-subtitle Однокомнатная на Окской
+                        .guarantees__card-content
+                            p.guarantees__card-copy Отличная работа, качественно и в срок. Очень довольна результатом. Рекомендую эту компанию<br><a>читать полностью</a>
+                    .guarantees__card-right-side
+                        img(src="./img/card_guarantees1.jpg")
+
+                article.guarantees__card
+                    .guarantees__card-left-side
+                        header.guarantees__card-header
+                            .guarantees__card-avatar: img(src="./img/guarantees_avatar2.jpg" alt="Ремонт квартир отзыв 1")
+                            b.guarantees__card-person Сергей Николаев
+                            p.guarantees__card-subtitle Однокомнатная на Окской
+                        .guarantees__card-content
+                            p.guarantees__card-copy Отличная работа, качественно и в срок. Очень довольна результатом. Рекомендую эту компанию<br><a>читать полностью</a>
+                    .guarantees__card-right-side
+                        img(src="./img/card_guarantees2.jpg")
+
+                article.guarantees__card
+                    .guarantees__card-left-side
+                        header.guarantees__card-header
+                            .guarantees__card-avatar: img(src="./img/guarantees_avatar3.jpg" alt="Ремонт квартир отзыв 1")
+                            b.guarantees__card-person Иван Сергеев
+                            p.guarantees__card-subtitle Однокомнатная на Окской
+                        .guarantees__card-content
+                            p.guarantees__card-copy Отличная работа, качественно и в срок. Очень довольна результатом. Рекомендую эту компанию<br><a>читать полностью</a>
+                    .guarantees__card-right-side
+                        img(src="./img/card_guarantees3.jpg")
+
+                article.guarantees__card
+                    .guarantees__card-left-side
+                        header.guarantees__card-header
+                            .guarantees__card-avatar: img(src="./img/guarantees_avatar4.jpg" alt="Ремонт квартир отзыв 1")
+                            b.guarantees__card-person Николай Иванов
+                            p.guarantees__card-subtitle Однокомнатная на Окской
+                        .guarantees__card-content
+                            p.guarantees__card-copy Отличная работа, качественно и в срок. Очень довольна результатом. Рекомендую эту компанию<br><a>читать полностью</a>
+                    .guarantees__card-right-side
+                        img(src="./img/card_guarantees4.jpg")
+
+        footer.site-footer#contacts
+            .site-footer__contacts
+                .site-footer__logo: img(src="./img/logo.png" alt="Ремонт квартир лого")
+                .site-footer__contacts-block
+                    .site-footer__text г. Калининград<br> ул. Ст. Лейтенанта Сибрякова, 21
+
+                .site-footer__contacts-block
+                    .site-footer__text Позвоните нам по телефону:<br> +7 (4012) 33-52-52
+
+                .site-footer__contacts-block
+                    .site-footer__text Оставьте заявку:<br> teplograd39@mail.ru
+            ul.site-footer__menu
+                li.site-footer__menu-item: a.site-footer__menu-link(href="#") Главная
+                li.site-footer__menu-item: a.site-footer__menu-link(href="#") О нас
+                li.site-footer__menu-item: a.site-footer__menu-link(href="#") Услуги
+                li.site-footer__menu-item: a.site-footer__menu-link(href="#") Прайс-лист
+                li.site-footer__menu-item: a.site-footer__menu-link(href="#") Скидки
+                li.site-footer__menu-item: a.site-footer__menu-link(href="#") Наши работы
+                li.site-footer__menu-item: a.site-footer__menu-link(href="#") Отзывы
+                li.site-footer__menu-item: a.site-footer__menu-link(href="#") Контакты
+                
+            form.site-footer__form#form--footer(action="mail.php")
+                header.site-footer__form-header
+                    p.site-footer__form-title Оставьте заявку<br>и мы свяжемся с вами
+                    p.site-footer__form-work мы работаем с 9<sup>00</sup> до 20<sup>00</sup>, без перерывов, <span>Пн-Сб</span>
+                .site-footer__form-group
+                    input(type="text" name="name" placeholder="John")
+                    input(type="email" name="email" placeholder="E-mail")
+                .site-footer__form-group
+                    textarea(placeholder="Сообщение" name="message")
+                .site-footer__button
+                    a.button.button--send(href="#") Отправить
+            

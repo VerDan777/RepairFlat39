@@ -1,0 +1,73 @@
+.offers {
+    // box model
+    margin-bottom: 150px;
+
+    &__header {
+        // box model
+        padding: 0 70px;
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        // box model
+
+        // typography
+        font-family: $mainFont;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $textColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__container {
+        // positioning
+        position: relative;
+
+        // box model
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        // positioning
+        position: relative;
+
+        // box model
+        padding-right: 50px;
+        // visual
+        border-radius: 15px;
+    }
+
+    &__content {
+        // positioning
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+    }
+
+    &__suggestion {
+        // box model
+        
+
+        // typography
+        font-size: 5rem;
+        color: $white;
+        font-family: $mainFont;
+        font-weight: 700;
+    }
+
+    &__description {
+        // box model
+
+        // visual
+
+        // typography
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $white;
+        font-family: $mainFont;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,20 @@
+.label {
+    // positioning
+    position: absolute;
+    top: 40px;
+
+    // box model
+    padding: 30px 50px;
+
+    // visual
+    background-color: $white;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+    // typography
+    color: $textColor;
+    font-family: $mainFont;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
